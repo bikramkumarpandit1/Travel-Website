@@ -1,0 +1,702 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scrollbar-width: none;
+}
+
+/* _____________________html element styling______________________ */
+
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.7;
+}
+
+ul li{
+    list-style: none;
+}
+
+a{
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+
+p,li{
+    font-size:1.6rem;
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+}
+
+h1, h2, h3{
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+    font-weight: 500;
+}
+
+/* ___________________utility classes__________________ */
+
+.container{
+    /* font-size: 1200px; */
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.lg-heading{
+    font-size: 3.5rem;
+}
+
+.md-heading{
+    font-size: 2.2rem;
+}
+
+.text-red{
+    color: #e63946;
+}
+
+.text-light{
+    color: #f4f4f4;
+}
+
+.text-black{
+    color: #333;
+}
+
+.text-gray{
+    color: #555;
+    display: -webkit-box;
+    -webkit-line-clamp: 6; /* Adjust this value to the number of lines you want to display */
+    -webkit-box-orient: vertical;
+    overflow:auto;
+    scroll-behavior:auto;
+    text-overflow: ellipsis;
+}
+
+.bg-dark{
+    background-color: #263238;
+}
+
+.btn{
+    display: inline-block;
+    padding: 0.5em 1.5em;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0.5 0;
+    /* border-radius: 30%; */
+}
+
+.btn-primary{
+    background-color: white;
+    border-radius: 10em;
+}
+
+.btn-primary:hover{
+    background-color: #ddd;
+}
+
+.btn-secondary{
+   border: 2px solid #e63946;
+   border-radius: 1.5rem;
+   color: #e63946;
+   background: #fff;
+}
+
+.btn-secondary:hover{
+    background-color: #fcf3f2;
+}
+
+/* ___________________________header styling______________________ */
+
+
+
+
+
+
+.header{
+    position: relative;
+    height: 95vh;
+    /* border: 2px solid green; */
+    background:linear-gradient(rgba(0,0,0,0.5) , rgba(0,0,0,0.5)) , url(../Image_For_project/header-image.jpg);
+    background-position:center ;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* .header .logo, .header .navbar a{
+    color: white;
+} */
+
+html{
+    /* font-size: 10px; */ 
+    /* 16px=100% */
+    /* 10px=(100/16)*10 */
+    font-size: 62.5%;
+}
+
+.navbar{
+    /* border: 2px solid white; */
+    padding: 1rem;
+}
+
+.navbar .logo{
+    float: left;
+    font-size: 3.5rem
+}
+
+.navbar .nav-items{
+    float: right;
+    margin-top: 1rem;
+}
+
+.navbar .nav-item{ 
+    display:inline-block;
+    padding: 1rem;
+    text-transform: uppercase;
+}
+
+.navbar a:link, .navbar a:visited{
+    color: #f4f4f4;
+}
+
+.navbar a{
+    padding: bottom 0.3rem;
+}
+.navbar a:hover{
+    border-bottom: 1px solid white;
+}
+
+.navbar::after{
+    content: '';
+    display: block;
+    clear: both ;
+}
+
+/* ____________________header content styling_____________________ */
+
+.headerContent{
+    position: absolute;
+    text-align: center;
+    /* border: 2px solid white; */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    background: linear-gradient(rgb(0,0,0,.2),rgba(0,0,0,.2));
+}
+
+.headerContent h1{
+    text-transform: uppercase ;
+    font-weight: 700;
+}
+.headerContent p{
+    text-transform: uppercase;
+}
+
+
+/* ___________________Search Button styling_______________________ */
+
+/* CSS for centering the search form */
+.search-form {
+    text-align: center;
+    margin: 20px auto; /* Adjust the margin to control the spacing */
+    max-width: 400px; /* Adjust the max-width as needed */
+}
+
+/* CSS for search input */
+#search-input {
+    padding: 10px;
+    width: 70%;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* CSS for search button */
+#search-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #e63946;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* CSS for search button hover effect */
+#search-button:hover {
+    background-color: #dc3545;
+}
+
+
+/* ___________________showcase section styling____________________ */
+
+.showcase{
+    background: #ddd;
+    padding: 10rem 0;
+}
+
+.row{
+    height: 350px;
+    /* border: 2px solid red; */
+    background: #f4f4f4;
+    box-shadow: 5px 5px 20px 0px #aaa;
+}
+
+.row1{
+    margin-bottom: 10rem;
+}
+
+.row1 .img-box, .row2 .text-box{
+    float: left;
+    width: 50%;
+}
+
+.row2 .img-box, .row1 .text-box{
+    float: right;
+    width: 50%;
+}
+
+.row3 .img-box, .row2.text-box{
+    float: left;
+    width: 50%;
+}
+
+.row3{
+    margin-top: 10rem;
+}
+
+.text-box {
+    float: right; /* Float the text box to the right */
+    width: 50%; /* Set the width for the text box */
+    padding: 2rem; /* Add padding as needed */
+    box-sizing: border-box; /* Include padding and border in the box sizing */
+}
+
+.row .img-box{
+    /* border: 2px solid green; */
+    height: 100%;
+    
+}
+
+.row .text-box{
+    /* border: 2px solid rebeccapurple; */
+    padding: 3rem;
+}
+
+.row .img-box img{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.row::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+
+/* ___________________Features sectiom stying________________ */
+
+
+.features{
+    padding: 10rem 0;
+}
+
+.box-wrapper{
+    /* border: 2px solid green; */
+    box-shadow: 5px 5px 20px 0px  rgba(0, 0, 0, 0.368);
+}
+
+.box{
+    width: 33.3333333%;
+    float: left;
+    /* border: 2px solid black; */
+    padding: 2rem;
+    text-align: center;
+}
+
+.box1, .box3{
+    background-color: #263238;
+    color: #fff;
+     /* Other styles for .box2 */
+     height: 300px; /* Set a fixed height for the scrollable area */
+     overflow-y: auto;
+     scroll-behavior:auto;
+     scrollbar-width: none;
+}
+
+.box2{
+    background-color: #eb505d;
+    color: #fff;
+     height: 300px; /* Set a fixed height for the scrollable area */
+     overflow-y: auto;
+     scroll-behavior: auto;
+     scrollbar-width: none;
+}
+
+.box-wrapper::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.box p{
+    font-style:oblique ; 
+}
+
+
+/* ___________________Footer Style_____________________ */
+
+
+.footer{
+    text-align: center;
+    padding: 2rem;
+    color: #fff;
+    background-color:#263238;
+}
+.footer i{
+    width: 5rem;
+}
+
+.footer p{
+    padding-top: 1rem;
+
+}
+
+
+/* ______________________About page styling________________ */
+
+
+
+.about-heading::after{
+    content: "";
+    display: block;
+    border-bottom: 5px solid red;
+    width: 100%;
+}
+
+
+/* _______________About wrapper styling_________________________ */
+
+
+
+.about-wrapper .left{
+    float: left;
+    width: 50%;
+}
+
+.about-wrapper .right{
+    float: right;
+    width: 50%;
+}
+
+.about-wrapper{
+    /* border: 2px solid green; */
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.about-wrapper::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.about-wrapper li::before{
+    content: '\2713';
+    color: #333;
+    font-weight: 700;
+    padding-right: 1rem;
+}
+
+
+/* ____________________Count Item Styling____________________________ */
+
+.count-item1{
+    float: left;
+    width: 25%;
+}
+
+.count-item2{
+    float: left;
+    width: 25%;
+}
+
+.count-item3{
+    float: left;
+    width: 25%;
+}
+
+.count-item4{
+    float: left;
+    width: 25%;
+}
+
+.count-item span{
+    font-weight: 800;
+    font-size: large;
+    color: red;
+}
+
+.count-item{
+    /* border: 5px solid black; */
+    padding: 2rem 2rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.count p{
+    font-weight: 600;
+    color: #263238;
+    font-size: 1.5rem;
+}
+
+.count:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+
+/* __________________________Cta bannet styling_______________________ */
+
+
+.cta-banner {
+    background: linear-gradient(25deg, #d64c7f, #ee4758 50%);
+    /* border: 4px solid black; */
+    color: #f4f4f4;
+    padding: 1rem;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.418);
+    margin-top: 3rem;
+}
+
+.cta-banner-left{
+    float: left;
+    /* border: 1px solid red; */
+    width: 60%;
+}
+
+.cta-banner-right{
+    float: right;
+    width: 40%;
+    text-align: right;
+}
+
+.cta-line{
+    font-weight: 700;
+    font-size: 2rem;
+    margin-top: 1.5rem;
+}
+
+.btn-cta{
+    text-align: center;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 3rem;
+    text-transform: uppercase;
+    border: 4px solid white;
+    padding: 0.3rem 2.5 em;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    letter-spacing: 0.5rem;
+    color: #f4f4f4;
+}
+
+.cta-banner::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+
+/* ________________Contact page Styling______________________ */
+
+
+.contact-form{
+    padding: 5rem 0;
+    /* font-size: 2rem; */
+    background: #f7f7f7;
+}
+
+/* .form-wrapper{
+    border: 4px solid red;
+} */
+
+.form-wrapper::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.form-wrapper .company-address{
+    height: 760px;
+    background: #fff;
+    /* border: 4px dotted green; */
+    width: 49%;
+    float: left;
+    padding: 1rem;
+}
+
+.form-wrapper .company-address i{
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+.form-wrapper .company-address h2{
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.form-wrapper .address-group{
+    margin-bottom: 3rem;
+}
+
+.form-wrapper .company-address img{
+    max-width: 90%;
+    min-height: 40rem;
+    object-fit: cover;
+    object-position: right;
+}
+
+
+
+/* _________________forms styling_____________________ */
+
+
+.form-wrapper .form{
+    height: 760px;
+    font-size: 1.6rem;
+    background: #fff;
+    /* border: 4px dotted black; */
+    width: 49%;
+    float: right;
+    padding: 1rem;
+}
+
+.form h1::after{
+    content:"" ;
+    display: block;
+    /* border: 3px solid #ee4758; */
+    border-bottom: 4px solid #ee4758;
+    width: 100%;
+}
+
+.form-wrapper .form label{
+    display: block;
+}
+
+.form-wrapper .form input{
+    padding: 0.5rem;
+    width: 100%;
+}
+
+.form-wrapper .form .form-group{
+    margin-bottom: 1.2rem;
+}
+
+.form-wrapper .form label::after{
+    content: "* ";
+    color: #e63946;
+}
+.form-wrapper .form textarea{
+    width: 100%;
+    height: 300px;
+    padding: 1rem;
+}
+
+.form-btn{
+    display: block;
+    margin: 0 auto;
+    padding: 0.5em 3em;
+    font-size: 1.8em;
+    text-transform: uppercase;
+    background: #e63946;
+    color: #fff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* ________________________media queries_________________________ */
+
+@media (max-width: 500px){
+    html{
+        font-size: 50%;
+
+    }
+
+    p{
+        font-size: 1.8rem;
+    }
+
+    .navbar .nav-items, .navbar .logo{
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .header .headerContent h1{
+        display: none;
+    }
+
+    .row{
+        height: auto;
+        width: 100%;
+    }
+
+    .row .img-box, .row .text-box{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .box-wrapper{
+        /* border: 2px solid green; */
+        box-shadow: none;
+    }
+
+    .cta-banner-left, .cta-banner-right{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .form-wrapper .company-address{
+        float: none;
+        width: 100%;
+        height: auto;
+        margin-bottom: 5rem;
+    }
+
+    .form-wrapper .form{
+        float: none;
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+@media(min-width: 769px) and (max-width: 1200px){
+    html{
+        font-size: 56.25%;
+    }
+
+    .row .text-box h2{
+        font-size: 2.2rem;
+        font-weight: 500;
+    }
+}
+
+@media (orientation: landscape) and (max-height: 500px)
+{
+    .header{
+        height: 90vmax;
+    }
+}
